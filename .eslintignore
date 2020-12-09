@@ -1,0 +1,12 @@
+/.nyc_output
+/.vscode
+/coverage
+/documentation
+/node_modules
+/app/apidoc.js
+/contracts
+/commands
+config
+japaFile.ts
+.env
+build

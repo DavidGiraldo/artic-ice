@@ -1,0 +1,28 @@
+{
+  "typescript": true,
+  "commands": [
+    "./commands",
+    "@adonisjs/core/build/commands"
+  ],
+  "exceptionHandlerNamespace": "App/Exceptions/ExceptionHandler",
+  "aliases": {
+    "App": "app",
+    "Contracts": "contracts",
+    "Config": "config",
+    "Mongo": "./providers/MongoDbProvider"
+  },
+  "preloads": [
+    "./start/routes",
+    "./start/kernel",
+    "./start/database"
+  ],
+  "providers": [
+    "./providers/AppProvider",
+    "@adonisjs/core",
+    "./providers/MongoDbProvider"
+  ],
+  "metaFiles": [
+    ".env",
+    ".adonisrc.json"
+  ]
+}
